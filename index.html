@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Stylesheet.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">    
+    <title>Homepage - The Haukai Restaurant</title>
+  </head>
+  <body>    
+    <header class="header" id="index-image">      
+      <nav class="nav">
+        <h1 class="logo">THE HAUKAI RESTAURANT</h1>
+        <a href="#" class="dropdown-navbar">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="location.html">Location & opening hours</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header> 
+    <main>
+      <section>
+        <div class="homepage-insert" id="reservations-insert">
+          <h2>WELCOME!</h2>
+          <p>Bookings avalible now, click below to make a reservation</p>          
+          <button class="btn" id="bookings-btn" onclick="location.href='reservations.html'">
+            BOOK NOW!
+          </button>
+        </div>     
+
+      </section>
+
+      <section>
+        <div class="menu-items-wrapper">
+          <div class="menu-item" id="menu-item-one">
+              <img src="/images/homepage/chowder.webp" alt="An image of our creamy chowder filled with tarakihi">
+              <p>Creamy chowder filled with tarakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+          </div>
+
+          <div class="menu-item" id="menu-item-two">
+              <img src="/images/homepage/lambSteak.webp" alt="An image of our New Zealand lamb coated in a kawakawa crumb">
+              <p>New Zealand lamb coated in a kawakawa crumb, served with Dijon-mustard-glazed carrots, roasted butternut
+                squash and mushroom jus.</p>
+          </div>
+
+          <div class="menu-item" id="menu-item-three">
+              <img src="/images/homepage/porkBelly.webp" alt="An image of our Slow-cooked pork belly">
+              <p>Slow-cooked pork belly served on a bed of apple slaw with roasted kumara and crispy noodles.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="homepage-insert" id="menu-insert">
+          <h2>Full menu avaliable</h2>
+          <p>Click below to view</p>          
+          <button class="btn" id="menu-btn" onclick="location.href='menu.html'">
+            Full menu
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Return to top of screen button-->
+    <button onclick="ReturnToTop()" id="buttonReturn"></button>
+    <!-- Linked JavaScript-->    
+    <script src="JS/JavaScript.js" async="async"></script>
+  </body>
+  <footer class="footer">
+    <h1>Contact Us</h1>      
+      <p>1 Island Street Kerikeri</p>
+      <p>Bay of Islands</p>
+      <p>09 401 4019</p>
+
+    <div class="logo" id="footerLogo">THE HAUKAI RESTAURANT</h1></div>
+
+    <h2>&copy; TheHaukaiRestaurant</h2>
+  </footer>
+</html>
