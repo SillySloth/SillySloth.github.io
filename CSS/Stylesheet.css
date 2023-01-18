@@ -80,9 +80,10 @@
 
 .logo {
   color: #ffffff;  
-  font-family: "Wire One";
-  font-size: 12vh;
-  font-weight: 800;
+  transform: scale(1, 1);
+  letter-spacing: -0.45rem;
+  font-size: 8vh;
+  font-weight: 100;
   background: none;
   padding-left: 1vw;
 }
@@ -358,8 +359,7 @@
   padding-bottom: 3vh;
 }
 .footer h2 {
-  font-size: 4vh;
-  font-family: "Wire One";
+  font-size: 2.5vh;  
   margin-top: 3vh;
 }
 .footer p {
