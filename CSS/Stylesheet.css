@@ -1,5 +1,3 @@
-
-
 /* #region Universal */
 * {
   margin: 0;
@@ -12,10 +10,7 @@
   background: #000000;
   color: #ffffff;
   text-decoration: none;
-  
-  
 }
-
 #buttonReturn {
   display: none;
   position: fixed;
@@ -79,10 +74,9 @@
 }
 
 .logo {
-  color: #ffffff;  
-  transform: scale(1, 1);
+  color: #ffffff; 
   letter-spacing: -0.45rem;
-  font-size: 8vh;
+  font-size: 7vh;
   font-weight: 100;
   background: none;
   padding-left: 1vw;
@@ -236,39 +230,36 @@
 /* #endregion */
 
 /* #region Location & opening hours */
-.location-embedded-map {
-  float: left;
-  width: 70%;
-}
-.location-embedded-map h1 {
+.location-wrapper h3 {
   padding: 5vh 0 2.5vh 2.5vh;
-  font-size: 5vh;
+  font-size: 4vh;
+}
+.location-embedded-map {
+  display:block;
+  width: 100%;
 }
 .linked-map {
-  width: 120vh;
+  width: 100vh;
   height: 80vh;
   border: 0;
 }
-
 .opening-hours {
-  float: left;
+  display:block;
   padding: 5vh 0 0 5vh;
+  width: 100%;
 }
-.opening-hours h1 {
-  font-size: 5vh;
-  text-align: left;
-  padding-bottom: 5vh;
+.opening-hours iframe{  
+  width: 50%;  
+  margin-left: -50px;  
+ 
 }
-.opening-hours p {
-  text-align: left;
-  font-size: 3vh;
-}
+
 /* #endregion */
 
 /* #region Contact us */
 .contact-us {
   float: left;
-  padding: 5vh 0 0 5vh;
+  padding: 5vh 0 0 0;
   width: 30%;
 }
 .contact-us h1 {
@@ -385,7 +376,48 @@
 /* #endregion */
 
 /* #region Responsive compatibilty */
+@media (max-width: 1600px) {
+  .logo {
+    font-size: 7vh;
+    letter-spacing: -0.2rem;
+  }
+  .logo span:last-of-type{
+    display: block;
+  }
+}
 @media (max-width: 1400px) {
+  
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #000000;
+  }
+
+  .dropdown-navbar {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-menu ul li {
+    text-align: center;
+  }
+
+  .nav-menu ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
   #menu-item-two,
   #menu-item-three {
     width: 50%;
@@ -410,44 +442,15 @@
       height: 60vh;
     }
     .logo {
-      font-size: 8vh;
+      font-size: 5vh;
+      text-align: left;
     }
 
     .btn {
       width: 50vw;
+      font-size: 3vh;
     }
-    .nav {
-      flex-direction: column;
-      align-items: flex-start;
-      background: #000000;
-    }
-
-    .dropdown-navbar {
-      display: flex;
-    }
-
-    .nav-menu {
-      display: none;
-      width: 100%;
-    }
-
-    .nav-menu ul {
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .nav-menu ul li {
-      text-align: center;
-    }
-
-    .nav-menu ul li a {
-      padding: 0.5rem 1rem;
-    }
-
-    .nav-menu.active {
-      display: flex;
-    }
-
+    
     .section-header {
       font-size: 2.5vh;
     }
@@ -459,13 +462,15 @@
       display: none;
     }
     .location-embedded-map,
-    .linked-map,
-    .opening-hours,
+    .linked-map,    
     .full-menu {
       width: 100%;
     }
     .menu-image img {
       width: 70%;
+    }
+    .opening-hours iframe {
+      width: 100%;
     }
   }
   @media (max-width: 800px) {
